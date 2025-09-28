@@ -33,13 +33,6 @@ A minimal, no-HAL, bare-metal game for **STM32F401CCU6** that draws to a **128×
 
 ---
 
-## Why bit-bang I²C?
-
-- It avoids using STM32 I²C peripherals so the example stays **single-file** and easy to port.
-- Trade-off: It’s **slower** than hardware I²C. You can increase FPS by reducing the software delay or (best) switching to the hardware I²C peripheral at 400 kHz “Fast Mode”.
-
----
-
 ## What is I²C (and how this code uses it)?
 
 **I²C** is a 2-wire, open-drain bus:
